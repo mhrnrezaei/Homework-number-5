@@ -1,0 +1,330 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1700px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.main-container nav,
+.main-container header,
+.main-container section,
+.main-container footer .dv-map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main-container nav {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+}
+
+.main-container nav div {
+  padding: 20px;
+  float: left;
+}
+
+.main-container nav .nv-dv-logo {
+  width: 30%;
+}
+
+.main-container nav .nv-dv-navbar {
+  width: 50%;
+}
+
+.main-container nav .nv-dv-login {
+  width: 20%;
+}
+
+.main-container nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container nav ul li a {
+  padding: 0 20px;
+  display: inline-block;
+}
+
+.main-container nav ul li a::after {
+  content: "";
+  height: 4px;
+  display: block;
+  width: 0;
+  background-color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main-container nav ul li a:hover::after {
+  width: 100%;
+}
+
+.main-container nav .nv-dv-login {
+  padding: 15px;
+}
+
+.main-container nav .nv-dv-login a {
+  float: right;
+  border: 2px solid white;
+  padding: 5px 15px;
+  margin-right: 40px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.main-container nav .nv-dv-login a:hover {
+  background-color: white;
+  color: black;
+}
+
+.main-container header {
+  height: 577px;
+}
+
+.main-container header img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  width: 100%;
+  height: auto;
+}
+
+.main-container section aside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: white;
+}
+
+.main-container section aside img {
+  width: 300px;
+  height: 450px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.main-container section article {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container section article .dv-article-movie {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  height: 500px;
+  margin: 10px 30px;
+}
+
+.main-container section article .dv-article-movie .dv-inf-img {
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+
+.main-container section article .dv-article-movie .dv-inf-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container section article .dv-article-movie .dv-inf-img .dv-info {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 40% 25px;
+  text-align: justify;
+  background-color: transparent;
+  color: #272626;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  opacity: 0.9;
+  visibility: hidden;
+}
+
+.main-container section article .dv-article-movie .dv-inf-img .dv-info h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.main-container section article .dv-article-movie .dv-inf-img .dv-info p {
+  font-size: 14px;
+}
+
+.main-container section article .dv-article-movie .dv-inf-img:hover .dv-info {
+  background-color: white;
+  visibility: visible;
+}
+
+.main-container section article .dv-article-movie .dv-mv-name {
+  width: 100%;
+}
+
+.main-container section article .dv-article-movie .dv-mv-name p {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.main-container .dv-map {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+  position: relative;
+}
+
+.main-container .dv-map div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.main-container .dv-map div h2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 140px;
+  color: white;
+  letter-spacing: 10px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.main-container footer {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.main-container footer h3 {
+  padding: 20px;
+  letter-spacing: 10px;
+}
+
+.main-container footer p {
+  width: 70%;
+  margin: auto;
+  padding: 40px;
+}
+
+@media screen and (max-width: 720px) {
+  .main-container > nav > .nv-dv-logo {
+    width: 100%;
+  }
+  .main-container > nav > .nv-dv-logo p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 35px;
+  }
+  .main-container nav .nv-dv-navbar {
+    width: 100%;
+  }
+  .main-container nav .nv-dv-navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container nav .nv-dv-navbar ul li {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    border: 3px solid white;
+    background-color: transparent;
+    margin-top: 3px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .main-container nav .nv-dv-navbar ul li:hover {
+    background-color: white;
+    color: black;
+  }
+  .main-container nav .nv-dv-navbar ul li:hover a {
+    color: black;
+  }
+  .main-container nav .nv-dv-login {
+    width: 100%;
+  }
+  .nv-dv-login {
+    display: none;
+  }
+  .main-container section aside {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
